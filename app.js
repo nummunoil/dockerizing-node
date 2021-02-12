@@ -12,7 +12,6 @@ const server = http.createServer(function (req, res) {
   } else {
     res.writeHead(200, {
       "Content-Type": "text/plain",
-      Link: "rel='shortcut icon' href='#'",
     });
     res.end("Here's the current value: " + count);
     console.log("Got a request: ", req.url);
